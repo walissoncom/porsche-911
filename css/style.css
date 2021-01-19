@@ -51,7 +51,7 @@ nav > .container {
  */
 
 
-.main > .container {
+main > .container {
     padding: 0 15%;
 }
 
@@ -80,4 +80,97 @@ nav > .container {
 .car > img {
     width: 100%;
     margin-left: 100px;
+}
+
+
+/*
+ *  FOOTER
+ */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: .2;
+}
+
+.social > i {
+    color: #747D8C;
+    font-size: 28px;
+}
+
+.slide {
+    display: flex;
+    flex-grow: .4;
+    justify-content: flex-end;
+}
+
+.slide > button {
+    border: none;
+    padding: 10px 15px;
+    outline-width: 0;
+}
+
+.slide > button:first-child {
+    margin-right: 50px;
+}
+
+.slide > ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 100px;
+}
+
+.slide > ul > li {
+    width: 10px;
+    font-size: 28px;
+}
+
+.info {
+    display: flex;
+    flex-grow: .4;
+    justify-content: flex-end;
+}
+
+.info > div {
+    min-width: 100px;
+    padding: 35px 50px 35px 25px;
+    background-color: #2F3542;
+    color: #FFF;
+}
+
+.info > div > p {
+    color: #747D8C;
+    margin-bottom: 10px;
+}
+
+.info > div > span {
+    color: #CED6E0;
+}
+
+.info > .other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px;
+    background-color: #ECCC68;
+    color: #2F3542;
+}
+
+.info > .other > p {
+    color: #2F3542;
 }
