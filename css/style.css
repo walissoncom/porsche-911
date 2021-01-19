@@ -7,6 +7,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*
+ *  NAV
+ */
+
 nav > .container {
     display: flex;
     align-items: center;
@@ -39,4 +43,41 @@ nav > .container {
 .search > i {
     color: #2F3542;
     font-size: 28px;
+}
+
+
+/*
+ *  MAIN
+ */
+
+
+.main > .container {
+    padding: 0 15%;
+}
+
+.brand__title {
+    margin: 100px 0 -220px;
+}
+
+.brand__title > h1 {
+    font-size: 80px;
+    color: #2F3542;
+    text-transform: uppercase;
+}
+
+.brand__title > p {
+    font-size: 40px;
+    font-weight: 600;
+    color: #57606F;
+    text-transform: uppercase;
+}
+
+.brand__title > span {
+    margin-left: 115px;
+    color: #747D8C;
+}
+
+.car > img {
+    width: 100%;
+    margin-left: 100px;
 }
