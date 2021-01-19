@@ -45,6 +45,10 @@ nav > .container {
     font-size: 24px;
 }
 
+.search > .fa-bars {
+    display: none;
+}
+
 
 /*
  *  MAIN
@@ -172,4 +176,264 @@ footer > .container {
 
 .info > .other > p {
     color: #2F3542;
+}
+
+
+/*
+ *  MEDIA QUERY
+ */
+
+ /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) and (max-width: 1440px) {
+  
+    .brand__title {
+        margin: 20px 0 -175px;
+    }    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .brand__title {
+        margin: 20px 0 -150px;
+    }
+    
+    .brand__title > h1 {
+        font-size: 70px;
+    }
+
+    .social {
+        padding-left: 40px;
+    }
+
+    .slide > ul {
+        width: 60px;
+    }
+
+    .info > div {
+        min-width: 60px;
+        padding: 35px 25px 35px 25px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    nav > .container {
+        padding: 20px 40px;
+    }
+
+    main > .container {
+        padding: 0 7.5%;
+    }
+
+    .car > img {
+        margin-left: 0;
+    }
+
+    .brand__title {
+        margin: 100px 0 0;
+    }
+
+    .social, .slide {
+        display: none;
+    }
+    
+    .info {
+        flex-grow: 1;
+    }
+
+    .info > div {
+        padding: 35px 15px 35px 20px;
+        width: 100%;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    nav > .container {
+        padding: 20px 40px;
+    }
+
+    .car > img {
+        margin-left: 50px;
+    }
+
+    .brand__title {
+        margin: 30px 0 -100px;
+    }
+    
+    .brand__title > h1 {
+        font-size: 50px;
+    }
+    
+    .brand__title > p {
+        font-size: 30px;
+    }
+
+    .brand__title > span {
+        margin-left: 75px;
+    }
+
+    .social, .slide {
+        display: none;
+    }
+    
+    .info {
+        flex-grow: 1;
+    }
+
+    .info > div {
+        padding: 35px 25px 35px 25px;
+        width: 100%;
+    }
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    nav > .container {
+        padding: 20px 40px;
+    }
+
+    .menu,
+    .search > .fa-search {
+        display: none;
+    }
+
+    .search > .fa-bars {
+        display: block;
+    }
+
+    .car > img {
+        margin-left: 25px;
+    }
+
+    .brand__title {
+        margin: 0 0 -75px;
+    }
+    
+    .brand__title > h1 {
+        font-size: 40px;
+    }
+    
+    .brand__title > p {
+        font-size: 22px;
+    }
+
+    .brand__title > span {
+        margin-left: 50px;
+    }
+
+    .social, .slide {
+        display: none;
+    }
+    
+    .info {
+        flex-grow: 1;
+    }
+
+    .info > div {
+        padding: 15px 25px 15px 25px;
+        width: 100%;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 480px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    nav > .container {
+        padding: 20px 40px;
+    }
+
+    .logo > img {
+        width: 45px;
+    }
+
+    main > .container {
+        padding: 0 40px;
+    }
+
+    .menu,
+    .search > .fa-search {
+        display: none;
+    }
+
+    .search > .fa-bars {
+        display: block;
+    }
+
+    .car > img {
+        margin-left: -10%;
+        width: 120%;
+    }
+
+    .brand__title {
+        margin: 20px 0 -30px;
+    }
+    
+    .brand__title > h1 {
+        font-size: 38px;
+    }
+    
+    .brand__title > p {
+        font-size: 22px;
+    }
+
+    .brand__title > span {
+        margin-left: 2px;
+    }
+
+    .social, .slide {
+        display: none;
+    }
+    
+    .info {
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .info > div {
+        padding: 15px 40px;
+        width: 100%;
+    }
+
+    .info > div:nth-child(2) {
+        padding: 0 40px;
+    }
+
+    .info > .other {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .info > div > p {
+        margin-bottom: 0;
+    }
 }
