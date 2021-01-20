@@ -1,5 +1,5 @@
 # Porsche 911
-Porsche 911 webpage created for studying purpose.
+Porsche 911 webpage created for studying purposes.
 <br />
 
 ## Live Demo
